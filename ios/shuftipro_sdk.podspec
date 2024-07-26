@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |spec|
 
   spec.name         = "shuftipro_sdk"
@@ -16,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Shufti Pro" => "support@shuftipro.com" }
   
   
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios, "13.0"
   
   spec.source       = { :git => "https://github.com/shuftipro/iOS-binary-pod.git", :tag => "#{spec.version}" }
   
