@@ -1,30 +1,30 @@
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint shuftipro_sdk.podspec` to validate before publishing.
-#
-Pod::Spec.new do |s|
-  s.name             = 'shuftipro_sdk'
-  s.version          = '3.7.4'
-  s.summary          = 'ShuftiPro Flutter SDK'
-  s.description      = "<<-DESCA new Flutter project. DESC"
-  s.homepage         = 'http://shuftipro.com'
-  s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Shuftipro' => 'support@shuftipro.com' }
-  s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
-  s.dependency 'Flutter'
-  s.dependency  'ShuftiPro' , '~> 3.7.4'
 
-  s.platform = :ios, '13.0'
-  s.source = { :git => 'https://github.com/shuftipro/iOS-binary-pod', :tag => s.version }
+Pod::Spec.new do |spec|
+
+  spec.name         = "ShuftiPro"
+  spec.version      = "3.7.4"
+  spec.summary      = "Shufti Pro is designed to verify documents in realtime."
   
-
-
-  # Flutter.framework does not contain a i386 slice.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
-  s.swift_version = '5.0'
-#  s.preserve_paths = 'ShuftiPro.xcframework'
-  s.xcconfig = { 'OTHER_LDFLAGS' => '-framework ShuftiPro' }
- # s.vendored_frameworks = 'ShuftiPro.xcframework'
+  spec.description  = <<-DESC
+  Shufti Pro has designed this Verification API document for its customers that have signed up for our next-generation service pack. This document will explain various kinds of verification services included in this service pack, how they are provided and what kind of data is required from our clients to perform these verifications successfully.
+  DESC
   
-end
+  spec.homepage     = "https://github.com/shuftipro/iOS-binary-pod"
+  
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  
+  spec.author       = { "Shufti Pro" => "support@shuftipro.com" }
+  
+  
+  spec.platform     = :ios, "11.0"
+  
+  spec.source       = { :git => "https://github.com/shuftipro/iOS-binary-pod.git", :tag => "#{spec.version}" }
+  
+    spec.ios.vendored_frameworks = 'ShuftiPro.framework'
+    spec.dependency 'Socket.IO-Client-Swift'
+    spec.swift_version = "5"
+  
+  spec.exclude_files = "Classes/Exclude"
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  end
