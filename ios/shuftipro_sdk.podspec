@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "shuftipro_sdk"
+  spec.name         = "ShuftiPro"
   spec.version      = "3.7.4"
   spec.summary      = "Shufti Pro is designed to verify documents in realtime."
   
