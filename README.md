@@ -1,0 +1,2 @@
+# Shuftipro Flutter SDK Integration
+For the actual SDK and comprehensive integration guide, please visit [Flutter Integration Guide](https://developers.shuftipro.com/docs/mobile/platforms/flutter-sdk-deprecated)

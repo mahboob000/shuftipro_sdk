@@ -1,0 +1,37 @@
+PODS:
+  - Flutter (1.0.0)
+  - ShuftiPro (3.7.4):
+    - Socket.IO-Client-Swift
+  - shuftipro_sdk (3.7.4):
+    - Flutter
+    - ShuftiPro (~> 3.7.4)
+  - Socket.IO-Client-Swift (16.1.0):
+    - Starscream (~> 4.0.6)
+  - Starscream (4.0.8)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - shuftipro_sdk (from `.symlinks/plugins/shuftipro_sdk/ios`)
+
+SPEC REPOS:
+  trunk:
+    - ShuftiPro
+    - Socket.IO-Client-Swift
+    - Starscream
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  shuftipro_sdk:
+    :path: ".symlinks/plugins/shuftipro_sdk/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  ShuftiPro: b9e7093e376b4f5afbe301648f47d4e8ed6ea864
+  shuftipro_sdk: 942d59db450a284734fc126b816875ed4d5da580
+  Socket.IO-Client-Swift: ee4b8f80a3db18dd7f32b266ddf273310609443c
+  Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
+
+PODFILE CHECKSUM: f17ef7f0064d40d7cfe746ccd16eccf7605baa70
+
+COCOAPODS: 1.15.2

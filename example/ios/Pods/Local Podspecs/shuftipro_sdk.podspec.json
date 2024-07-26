@@ -1,0 +1,38 @@
+{
+  "name": "shuftipro_sdk",
+  "version": "3.7.4",
+  "summary": "ShuftiPro Flutter SDK",
+  "description": "<<-DESCA new Flutter project. DESC",
+  "homepage": "http://shuftipro.com",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Shuftipro": "support@shuftipro.com"
+  },
+  "source": {
+    "git": "https://github.com/shuftipro/iOS-binary-pod",
+    "tag": "3.7.4"
+  },
+  "source_files": "Classes/**/*",
+  "dependencies": {
+    "Flutter": [
+
+    ],
+    "ShuftiPro": [
+      "~> 3.7.4"
+    ]
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"
+  },
+  "swift_versions": "5.0",
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-framework ShuftiPro"
+  },
+  "swift_version": "5.0"
+}
