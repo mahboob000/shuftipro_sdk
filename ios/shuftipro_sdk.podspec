@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.summary          = 'ShuftiPro Flutter SDK'
   s.description      = "<<-DESCA new Flutter project. DESC"
   s.homepage         = 'http://shuftipro.com'
-  s.license          = { :file => '../LICENSE' }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author           = { 'Shuftipro' => 'support@shuftipro.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
@@ -25,6 +25,9 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
 #  s.preserve_paths = 'ShuftiPro.xcframework'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-framework ShuftiPro' }
- # s.vendored_frameworks = 'ShuftiPro.xcframework'
+  # s.vendored_frameworks = 'ShuftiPro.xcframework'
+  s.exclude_files = "Classes/Exclude"
+s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
 end

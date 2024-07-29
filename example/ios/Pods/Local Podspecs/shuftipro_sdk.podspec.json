@@ -5,7 +5,8 @@
   "description": "<<-DESCA new Flutter project. DESC",
   "homepage": "http://shuftipro.com",
   "license": {
-    "file": "../LICENSE"
+    "type": "MIT",
+    "file": "LICENSE"
   },
   "authors": {
     "Shuftipro": "support@shuftipro.com"
@@ -27,12 +28,15 @@
     "ios": "13.0"
   },
   "pod_target_xcconfig": {
-    "DEFINES_MODULE": "YES",
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "swift_versions": "5.0",
   "xcconfig": {
     "OTHER_LDFLAGS": "-framework ShuftiPro"
+  },
+  "exclude_files": "Classes/Exclude",
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "swift_version": "5.0"
 }
