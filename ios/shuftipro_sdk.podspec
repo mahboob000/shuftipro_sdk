@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
-#  s.preserve_paths = 'ShuftiPro.xcframework'
+  s.preserve_paths = 'ShuftiPro.xcframework'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-framework ShuftiPro' }
-  # s.vendored_frameworks = 'ShuftiPro.xcframework'
+  s.vendored_frameworks = 'ShuftiPro.xcframework'
   s.exclude_files = "Classes/Exclude"
 s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
